@@ -6,15 +6,15 @@
         <title>Noten Trainer</title>
         <link href="./styles/output.css" rel="stylesheet" />
     </head>
-    <body>
-        <main class="flex flex-col w-full">
+    <body class="overflow-x-hidden">
+        <main class="flex flex-col max-w-full overflow-hidden">
             <div
-                class="w-[400px] rounded overflow-hidden shadow-lg m-auto mt-[100px] text-center border-solid border-2 border-red px-[5px]"
+                class="w-[400px] rounded overflow-hidden sm:shadow-lg m-auto mt-[100px] text-center sm:border-solid sm:border-2"
             >
                 <h2 class="text-[250px]" id="display">Do</h2>
             </div>
             <div
-                class="flex justify-between mt-3 w-[400px] m-auto text-center items-center"
+                class="flex justify-between mt-3 w-[full] sm:w-[400px] m-auto text-center items-center"
             >
                 <input
                     type="range"
@@ -22,7 +22,7 @@
                     max="15"
                     value="5"
                     id="myRange"
-                    class="w-[300px] h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
+                    class="sm:w-[300px] h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
                 />
                 <p id="rangeDisplay" class="ml-2"></p>
             </div>
