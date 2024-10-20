@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Noten Trainer</title>
+        <link href="./styles/output.css" rel="stylesheet" />
+    </head>
+    <body>
+        <main class="flex flex-col w-full">
+            <div
+                class="w-[400px] rounded overflow-hidden shadow-lg m-auto mt-[100px] text-center border-solid border-2 border-red px-[5px]"
+            >
+                <h2 class="text-[250px]" id="display">Do</h2>
+            </div>
+            <div
+                class="flex justify-between mt-3 w-[400px] m-auto text-center items-center"
+            >
+                <input
+                    type="range"
+                    min="1"
+                    max="15"
+                    value="5"
+                    id="myRange"
+                    class="w-[300px] h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
+                />
+                <p id="rangeDisplay" class="ml-2"></p>
+            </div>
+        </main>
+    </body>
+    <script src="main.js"></script>
+</html>
